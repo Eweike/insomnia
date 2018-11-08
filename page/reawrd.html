@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险-打卡</title>
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+    <style>
+        #lignt {
+            width: 100%;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        #codeImg {
+            width: 1.83rem;
+            height: 1.83rem;
+            margin-top: .8rem;
+            margin-bottom: .1rem;
+            margin-left: .96rem;
+        }
+
+        p {
+            text-align: center;
+            line-height: .3rem;
+            font-size: .15rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        #hard{
+            width: 3.53rem;
+            height: 4.69rem;
+            margin-top: .25rem;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="lignt">
+            <img id="codeImg" src="../images/ligntCode.png">
+            <p>扫码关注「DK彩妆」公众号</p>
+            <p>点击「一周一膜」-「128会员」</p>
+            <p>全年每周可以免费领取5贴面膜</p>
+        </div>
+        <img src="../images/hardCode.png" id="hard">
+    </div>
+    <script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/lib/common.js"></script>
+    <script>
+        $(function () {
+            let type = getUrlParam("type")
+            if(type == 0){
+                $("#lignt").show()
+            }
+            if(type == 2){
+                $("#hard").show()
+            }
+        })
+    </script>
+</body>
+
+</html>

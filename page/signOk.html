@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险</title>
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signOk.css?v=1.0">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <p class="top-tip">报名成功</p>
+        <div class="ip"><span id="time">12637126</span>开始打卡</div>
+        <div class="btn" id="detailBtn">查看活动详情</div>
+    </div>
+    <script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/lib/weui.min.js"></script>
+    <script type="text/javascript" src="../js/lib/common.js"></script>
+    <script type="text/javascript" src="../js/view/signOk.js?v=1.0"></script>
+</body>
+
+</html>

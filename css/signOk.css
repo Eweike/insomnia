@@ -1,0 +1,33 @@
+.container p{
+    font-size:0.25rem;
+    font-weight:bold;
+    margin-top: 0.15rem;
+    z-index: 20;
+    letter-spacing: 2px;
+}
+.top-tip{
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.top-tip:after{
+    content: '';
+    width: 1.52rem;
+    height: 0.19rem;
+    background: url('../images/oval.png');
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -.76rem;
+    z-index: -10;
+}
+.ip{
+    margin-top: 0.3rem;
+    font-size: 0.16rem;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding-bottom: 0.3rem;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 1px;
+}

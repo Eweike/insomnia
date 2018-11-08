@@ -1,0 +1,130 @@
+body,html{
+    background-color: rgb(17, 44, 75);
+}
+.top-box{
+    width: 3.75rem;
+    height: 2.68rem;
+    background: url('../images/clockBg.png') no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.day-list{
+    width: 3.14rem;
+    height: 1.56rem;
+    background: url('../images/rectangle2.png') no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.57rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    align-items: center;
+}
+.date-tip{
+    height: .4rem;
+    line-height: .4rem;
+    font-weight: bold;
+    font-size: .13rem;
+}
+.date-list{
+    width: 2.6rem;
+    /* height: 1.06rem; */
+    /* margin-left: .33rem; */
+    margin: 0 auto;
+}
+.date-list li{
+    width: .37rem;
+    height: .37rem;
+    /* line-height: .37rem; */
+    text-align: center;
+    font-size: .22rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 50%;
+    float: left;
+    margin: 0 .075rem;
+    margin-bottom: .18rem;
+}
+.clock{
+    background-color: rgb(245, 166, 35);
+    position: relative;
+}
+.clock::after{
+    content: '完成';
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: -1.6em;
+    font-size: .12rem;
+}
+.middle-tip{
+    font-size: .14rem;
+    color: #fff;
+    margin-top: .3rem;
+}
+.middle-btn{
+    width: 1.34rem;
+    height: .46rem;
+    line-height: .44rem;
+    text-align: center;
+    background: url("../images/btnBg.png") no-repeat;
+    background-size: 100%;
+    font-size: .14rem;
+    font-weight: bold;
+    margin-top: .37rem;
+    cursor: pointer;
+}
+.bottom-tip{
+    margin-top: .31rem;
+    font-size: .13rem;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+.bottom-tip::before{
+    content: '';
+    position: absolute;
+    width: .3rem;
+    height: 1px;
+    background-color: #fff;
+    left: -.44rem;
+    top: 49%;
+}
+.bottom-tip::after{
+    content: '';
+    position: absolute;
+    width: .3rem;
+    height: 1px;
+    background-color: #fff;
+    right: -.44rem;
+    top: 49%;
+}
+.bottom-img{
+    width: 3.37rem;
+    height: 1.17rem;
+    margin-top: .1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgb(216, 216, 216);
+}
+.cover-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+.cover-bg .cover-tip {
+    width: 1.33rem;
+    height: 0.94rem;
+    position: absolute;
+    top: 0.05rem;
+    right: 0.14rem;
+    background: url("../images/share.png") no-repeat;
+    background-size: 100%;
+}

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险-公布结果</title>
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+</head>
+
+<body>
+    <div class="container" style="padding-left: .19rem;padding-right: .32rem;">
+        <div class="title">活动结果</div>
+        <div class="per-info">
+            <ul class="clearfix">
+                <li>
+                    <p class="before-info">你的姓名</p>
+                    <p class="n2" id="name"></p>
+                </li>
+                <li>
+                    <p class="before-info">累计失眠天数</p>
+                    <p class="n2"><span id="count"></span>天</p>
+                </li>
+                <li>
+                    <p class="before-info">累计熬夜时间</p>
+                    <p class="n2" id="aypniaSum"></p>
+                </li>
+                <li>
+                    <p class="before-info">排名</p>
+                    <p class="n2">第<span id="rank"></span>名</p>
+                </li>
+                <li>
+                    <p class="before-info">最终奖励</p>
+                    <p class="n2">“<span id="reward"></span>”保险</p>
+                </li>
+                <li>
+                    <p class="n2" id="rewardDetail"></p>
+                </li>
+            </ul>
+        </div>
+        <div class="btn" id="rewardBtn">前往领奖</div>
+        <a class="school" id="introduce">奖励介绍</a>
+    </div>
+    <script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/lib/weui.min.js"></script>
+    <script type="text/javascript" src="../js/lib/common.js"></script>
+    <script type="text/javascript" src="../js/view/result.js"></script>
+</body>
+
+</html>

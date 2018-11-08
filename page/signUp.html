@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险-报名</title>
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signUp.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+</head>
+
+<body>
+    <div class="container" style="padding-left: .19rem;padding-right: .32rem;">
+        <div class="title">活动报名</div>
+        <div class="per-info">
+            <ul class="clearfix">
+                <li>
+                    <label class="before-info" for="nickname">输入你的姓名</label>
+                    <input class="n1" placeholder="请输入" id="nickname" />
+                </li>
+                <li>
+                    <label class="before-info" for="wnum">请输入微信号</label>
+                    <input class="n1" placeholder="请输入" id="wnum" maxlength="20" />
+                </li>
+                <li>
+                    <label class="before-info" for="num">请输入手机号</label>
+                    <input class="n1" placeholder="请输入" id="num" maxlength="11" />
+                </li>
+                <li>
+                    <label class="before-info" for="sex">你的性别</label>
+                    <div class="n1" id="sex">请选择</div>
+                </li>
+                <li>
+                    <label class="before-info" for="picker">你的年龄</label>
+                    <div class="n1" id="picker">请选择</div>
+
+                </li>
+                <li>
+                    <label class="before-info" for="school">所在学校</label>
+                    <input class="n1" id="school" placeholder="请输入" maxlength="20" />
+                </li>
+            </ul>
+        </div>
+        <div class="btn">提交</div>
+        <div class="school"><a href="#" id="introduce">活动介绍</a></div>
+    </div>
+    <script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/lib/weui.min.js"></script>
+    <script type="text/javascript" src="../js/lib/common.js"></script>
+    <script type="text/javascript" src="../js/view/signUp.js"></script>
+</body>
+
+</html>

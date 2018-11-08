@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险-打卡</title>
+    <link rel="stylesheet" href="../css/weui.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/clock.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-box">
+            <div class="day-list">
+                <p class="date-tip"></p>
+                <ul class="date-list clearfix">
+                    <li id="date1">1</li>
+                    <li id="date2">2</li>
+                    <li id="date3">3</li>
+                    <li id="date4">4</li>
+                    <li id="date5">5</li>
+                    <li id="date6">6</li>
+                    <li id="date7">7</li>
+                    <li id="date8">8</li>
+                    <li id="date9">9</li>
+                    <li id="date10">10</li>
+                </ul>
+            </div>
+        </div>
+        <p class="middle-tip">累计晚睡时长（超过23:30）：<span id="lateTime"></span></p>
+        <div class="middle-btn" id="clockBtn">点击签到</div>
+        <p class="bottom-tip">为你推荐</p>
+        <div class="bottom-img" id="banner"></div>
+        <div class="cover-bg" id="cover">
+            <div class="cover-tip"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/lib/weui.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+    <script type="text/javascript" src="../js/lib/common.js"></script>
+    <script type="text/javascript" src="../js/view/clock.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>失眠保险-打卡失败</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 100 * (clientWidth / 375) + 'px';
+                };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window)
+    </script>
+    <style>
+        html,body{
+            background-color: #fff;
+        }
+        .p-box{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 30%;
+            margin: auto;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        p{
+            color: rgb(171, 171, 171);
+            line-height: .4rem;
+            letter-spacing: 1px;
+            font-size: .16rem;
+        }
+        .top{
+            font-size: .26rem;
+            line-height: .6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="p-box">
+            <p class="top">无法打卡</p>
+            <p>很遗憾，你错过了本期活动</p>
+            <p>或者报名并未成功</p>
+        </div>
+    </div>
+</body>
+
+</html>
